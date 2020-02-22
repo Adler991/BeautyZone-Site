@@ -1,0 +1,1 @@
+{"version":3,"sources":["main.js"],"names":["console","log"],"mappings":"AACCA,QAAQC,IAAI","sourcesContent":["(function () {\r\n\tconsole.log('22')\r\n})();"],"file":"../js/main-min.js"}
