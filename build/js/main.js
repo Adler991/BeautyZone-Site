@@ -1,4 +1,2 @@
-(function () {
-	console.log('22')
-})();
+$('select').styler()
 //# sourceMappingURL=../maps/main.js.map

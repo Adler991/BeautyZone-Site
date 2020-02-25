@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jQueryFormStyler/2.0.2/jquery.formstyler.min.css">
   <link rel="stylesheet" href="./css/main.css">
 </head>
 
@@ -33,50 +34,51 @@
             </div>
           </div>
         </div>
-        <nav class="header__nav">
-          <ul class="header__list">
-            <li class="header__list-item">
-              <a href="	" class="header__link">
-                <span class="main__link"></span>
-                <span class="main__link-desc">Каталог</span>
-              </a>
-            </li>
-            <li class="header__list-item">
-              <a href="" class="header__link">
-                <span class="header-nav__link"></span>
-                <span class="header-nav__desc">Акции</span>
-              </a>
-            </li>
-            <li class="header__list-item">
-              <a href="" class="header__link">
-                <span class="header-nav__link"></span>
-                <span class="header-nav__desc">Наборы
-                  и комплекты</span>
-              </a>
-            </li>
-            <li class="header__list-item">
-              <a href="" class="header__link">
-                <span class="header-nav__link"></span>
-                <span class="header-nav__desc">Блог</span>
-              </a>
-            </li>
-            <li class="header__list-item">
-              <a href="" class="header__link">
-                <span class="header-nav__link"></span>
-                <span class="header-nav__desc">Тесты</span>
-              </a>
-            </li>
-            <li class="header__list-item">
-              <a href="" class="header__link">
-                <span class="header-nav__link"></span>
-                <span class="header-nav__desc">Как покупать
-                  дешевле</span>
-              </a>
-            </li>
-          </ul>
-        </nav>
+        <div class="header-nav-wr">
+          <nav class="header__nav">
+            <ul class="header__list">
+              <li class="header__list-item">
+                <a href="	" class="header__link">
+                  <span class="main__link icon-cat"></span>
+                  <span class="main__link-desc">Каталог</span>
+                </a>
+              </li>
+              <li class="header__list-item">
+                <a href="" class="header__link">
+                  <span class="header-nav__link icon-stocks"></span>
+                  <span class="header-nav__desc">Акции</span>
+                </a>
+              </li>
+              <li class="header__list-item">
+                <a href="" class="header__link">
+                  <span class="header-nav__link icon-makeup"></span>
+                  <span class="header-nav__desc">Наборы
+                    и комплекты</span>
+                </a>
+              </li>
+              <li class="header__list-item">
+                <a href="" class="header__link">
+                  <span class="header-nav__link icon-blog"></span>
+                  <span class="header-nav__desc">Блог</span>
+                </a>
+              </li>
+              <li class="header__list-item">
+                <a href="" class="header__link">
+                  <span class="header-nav__link icon-test"></span>
+                  <span class="header-nav__desc">Тесты</span>
+                </a>
+              </li>
+              <li class="header__list-item">
+                <a href="" class="header__link">
+                  <span class="header-nav__link icon-cheaper"></span>
+                  <span class="header-nav__desc">Как покупать
+                    дешевле</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </header>
-
       <div class="main-content-second">
         <div class="girl-wr">
           <div class="girl">
@@ -89,8 +91,60 @@
         <span class="main-text">아름다움</span>
         <p class="main__desc">Корейская косметикапремиум класса</p>
         <button class="button header-button">Подобрать косметику</button>
-
       </div>
+    </div>
+  </section>
+  <section class="catalog">
+    <div class="content catalog-content">
+      <div class="catalog-links">
+        <div class="catalog__link-wr">
+          <a href="#" class="catalog__link first-link">
+            <div class="catalog__img first-child catalog__img-one"><img src="./img/catalog-1.jpg" alt="image"></div>
+            <span>Глаза</span>
+          </a>
+        </div>
+        <div class="catalog__link-wr">
+          <a href="#" class="catalog__link">
+            <div class="catalog__img"><img src="./img/catalog-2.jpg" alt="image"></div>
+            <span>Лицо</span>
+          </a>
+        </div>
+        <div class="catalog__link-wr">
+          <a href="#" class="catalog__link">
+            <div class="catalog__img"><img src="./img/catalog-3.jpg" alt="image"></div>
+            <span>Губы</span>
+          </a>
+        </div>
+        <div class="catalog__link-wr">
+          <a href="#" class="catalog__link">
+            <div class="catalog__img"><img src="./img/catalog-4.jpg" alt="image"></div>
+            <span>Волосы</span>
+          </a>
+        </div>
+        <div class="catalog__link-wr">
+          <a href="#" class="catalog__link">
+            <div class="catalog__img"><img src="./img/catalog-5.jpg" alt="image"></div>
+            <span>Уход за телом</span>
+          </a>
+        </div>
+        <div class="catalog__link-wr">
+          <a href="#" class="catalog__link">
+            <div class="catalog__img"><img src="./img/catalog-6.jpg" alt="image"></div>
+            <span>Организм</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="main-form">
+    <div class="content content-form">
+      <form class="cosmetic-form" action="">
+        <span class="form__title">Вам больше не нужно долго выбирать косметику - Мы подобрали ее индивидуально для вас</span>
+        <select name="skin" id="">
+          <option selected value="sas">sdfsdfdsf</option>
+          <option value="sas">sdfsdfdsf</option>
+        </select>
+      </form>
     </div>
   </section>
   <section class="friends">
@@ -328,6 +382,8 @@
       </nav>
     </div>
   </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jQueryFormStyler/2.0.2/jquery.formstyler.min.js"></script>
   <script src="./js/main.js"></script>
 </body>
 
