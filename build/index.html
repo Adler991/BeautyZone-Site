@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jQueryFormStyler/2.0.2/jquery.formstyler.min.css">
   <link rel="stylesheet" href="./css/main.css">
 </head>
@@ -28,6 +29,73 @@
               <span class="controls-icons notification"></span>
               <span class="controls-icons mail"></span>
               <span class="controls-icons cart"></span>
+              <div class="card-popup">
+                <div class="card-wr">
+                  <span class="popup-header">Корзина</span>
+                  <div class="card__items">
+                    <div class="card__row">
+                      <div class="product-img">
+                        <img src="./img/product.jpg" alt="product">
+                      </div>
+                      <span class="product-name">Улиточный крем Snail Repair ...</span>
+                      <div class="quantity">
+                        <input hidden type="number" min="1" max="20" step="1" value="2">
+                      </div>
+                      <span class="card__price">350 <span>p.</span></span>
+                      <span class="close"></span>
+                    </div>
+                    <div class="card__row">
+                      <div class="product-img">
+                        <img src="./img/product.jpg" alt="product">
+                      </div>
+                      <span class="product-name">Улиточный крем Snail Repair ...</span>
+                      <div class="quantity">
+                        <input hidden type="number" min="1" max="20" step="1" value="1">
+                      </div>
+                      <span class="card__price">175 <span>p.</span></span>
+                      <span class="close"></span>
+                    </div>
+                    <div class="card__row">
+                      <div class="product-img">
+                        <img src="./img/product.jpg" alt="product">
+                      </div>
+                      <span class="product-name">Улиточный крем Snail Repair ...</span>
+                      <div class="quantity">
+                        <input hidden type="number" min="1" max="20" step="1" value="3">
+                      </div>
+                      <span class="card__price">300 <span>p.</span></span>
+                      <span class="close"></span>
+                    </div>
+                    <div class="card__row">
+                      <div class="product-img">
+                        <img src="./img/product.jpg" alt="product">
+                      </div>
+                      <span class="product-name">Улиточный крем Snail Repair ...</span>
+                      <div class="quantity">
+                        <input hidden type="number" min="1" max="9" step="1" value="10">
+                      </div>
+                      <span class="card__price">1000 <span>p.</span></span>
+                      <span class="close"></span>
+                    </div>
+                    <div class="card__row">
+                      <div class="product-img">
+                        <img src="./img/product.jpg" alt="product">
+                      </div>
+                      <span class="product-name">Улиточный крем Snail Repair ...</span>
+                      <div class="quantity">
+                        <input hidden type="number" min="1" max="9" step="1" value="10">
+                      </div>
+                      <span class="card__price">1000 <span>p.</span></span>
+                      <span class="close"></span>
+                    </div>
+                  </div>
+                  <p class="total">Итого: <span class="total-price">1825 <span>p.</span></span></p>
+                  <div class="button-price-wr">
+                    <button class="button button-price">Далее</button>
+                  </div>
+                  <span class="step">Шаг 1 из 4</span>
+                </div>
+              </div>
             </div>
             <div class="header__user">
               <img src="./img/user.jpg" alt="user">
@@ -38,10 +106,48 @@
           <nav class="header__nav">
             <ul class="header__list">
               <li class="header__list-item">
-                <a href="	" class="header__link">
+                <div class=" main__header-link">
                   <span class="main__link icon-cat"></span>
-                  <span class="main__link-desc">Каталог</span>
-                </a>
+                  <div class="head-catalog">
+                    <div class="head-item">
+                      <div class="head-img">
+                        <img src="./img/wooman-1.jpg" alt="catalog">
+                      </div>
+                      <span>Глаза</span>
+                    </div>
+                    <div class="head-item">
+                      <div class="head-img">
+                        <img src="./img/wooman-2.jpg" alt="catalog">
+                      </div>
+                      <span>Лицо</span>
+                    </div>
+                    <div class="head-item">
+                      <div class="head-img">
+                        <img src="./img/wooman-3.jpg" alt="catalog">
+                      </div>
+                      <span>Губы</span>
+                    </div>
+                    <div class="head-item">
+                      <div class="head-img">
+                        <img src="./img/wooman-4.jpg" alt="catalog">
+                      </div>
+                      <span>Волосы</span>
+                    </div>
+                    <div class="head-item">
+                      <div class="head-img">
+                        <img src="./img/wooman-5.jpg" alt="catalog">
+                      </div>
+                      <span>Уход за телом</span>
+                    </div>
+                    <div class="head-item">
+                      <div class="head-img">
+                        <img src="./img/wooman-6.jpg" alt="catalog">
+                      </div>
+                      <span>Организм</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="main__link-desc">Каталог</span>
               </li>
               <li class="header__list-item">
                 <a href="" class="header__link">
@@ -89,7 +195,7 @@
           </div>
         </div>
         <span class="main-text">아름다움</span>
-        <p class="main__desc">Корейская косметикапремиум класса</p>
+        <p class="main__desc">Корейская косметика премиум класса</p>
         <button class="button header-button">Подобрать косметику</button>
       </div>
     </div>
@@ -383,6 +489,8 @@
     </div>
   </footer>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.js"></script>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jQueryFormStyler/2.0.2/jquery.formstyler.min.js"></script>
   <script src="./js/main.js"></script>
 </body>
